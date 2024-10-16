@@ -1,0 +1,105 @@
+/* App.css */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+input[type="text"] {
+  width: calc(100% - 100px);
+  padding: 12px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+button {
+  padding: 12px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+li:hover {
+  background-color: #e9ecef;
+}
+
+li input[type="checkbox"] {
+  margin-right: 15px;
+  transform: scale(1.5);
+}
+
+li button {
+  background-color: #dc3545;
+  padding: 8px 12px;
+}
+
+li button:hover {
+  background-color: #c82333;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #999;
+  opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+  input[type="text"] {
+    width: calc(100% - 70px);
+  }
+
+  button {
+    width: 70px;
+  }
+}
